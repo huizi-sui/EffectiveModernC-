@@ -49,18 +49,18 @@ private:
 };
 
 // 考虑继承时，完美转发的构造函数和编译器生成的拷贝、移动操作之间的交互更加复杂
-class SpecialPerson : public Person {
-public:
-    // 派生类将SpecialPerson类型的实参传递给其基类，然后通过模板实例化
-    // 和重载解析规则作用于基类Person。最终代码无法编译，因为std::string
-    // 没有接受一个SpecialPerson的构造函数
-    SpecialPerson(const SpecialPerson& rhs) : Person(rhs) {
-        // 拷贝构造函数，调用基类的完美转发构造函数
-    }
-    SpecialPerson(SpecialPerson&& rhs) : Person(std::move(rhs)) {
-        // 移动构造函数，调用基类的完美转发构造函数
-    }
-};
+// class SpecialPerson : public Person {
+// public:
+//     // 派生类将SpecialPerson类型的实参传递给其基类，然后通过模板实例化
+//     // 和重载解析规则作用于基类Person。最终代码无法编译，因为std::string
+//     // 没有接受一个SpecialPerson的构造函数
+//     SpecialPerson(const SpecialPerson& rhs) : Person(rhs) {
+//         // 拷贝构造函数，调用基类的完美转发构造函数
+//     }
+//     SpecialPerson(SpecialPerson&& rhs) : Person(std::move(rhs)) {
+//         // 移动构造函数，调用基类的完美转发构造函数
+//     }
+// };
 
 int main() {
     {

@@ -97,7 +97,7 @@ void test2() {
 vs.emplace_back("xyzzy"); //在容器末尾构造新值；不是传递的容器中元素的类型；没有使用拒绝重复项的容器
 vs.emplace_back(50, 'x'); 
 */
-void test2() {
+void test3() {
     std::vector<std::string> vs;
     std::string s("aaa");
     vs.push_back(s);
@@ -129,7 +129,7 @@ std::list<std::shared_ptr<Widget>> ptrs;
 void killWidget(Widget* pWidget) {
     delete pWidget;
 }
-void test3() {
+void test4() {
     ptrs.push_back(std::shared_ptr<Widget>(new Widget, killWidget));
     // 也可以这样写
     ptrs.push_back({new Widget, killWidget});
@@ -170,7 +170,7 @@ void test3() {
 鉴于C++11对正则表达式的支持，假设你创建了一个正则表达式对象的容器
 */
 std::vector<std::regex> regexes;
-void test4() {
+void test5() {
     // 指针不是正则表达式
     // std::regex r = nullptr; // error: 不能编译
     // regexes.push_back(nullptr); // error: 不能编译

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.0)
-project(Hello)
+add_subdirectory(concurrency)
 
 # set(CMAKE_CXX_STANDARD 11)
 
