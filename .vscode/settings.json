@@ -57,6 +57,8 @@
         "bit": "cpp",
         "condition_variable": "cpp",
         "mutex": "cpp",
-        "list": "cpp"
+        "list": "cpp",
+        "regex": "cpp",
+        "shared_mutex": "cpp"
     }
 }
