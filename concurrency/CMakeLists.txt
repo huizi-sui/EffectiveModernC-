@@ -23,3 +23,21 @@ target_link_libraries(chapter6_2 pthread)
 
 add_executable(chapter6_3 chapter6_3.cpp)
 target_link_libraries(chapter6_3 pthread)
+
+add_executable(chapter7_1 chapter7_1)
+target_link_libraries(chapter7_1 pthread)
+
+add_executable(chapter7_2 chapter7_2)
+target_link_libraries(chapter7_2 pthread)
+
+add_executable(ProducerAndComsumer1 ProducerAndComsumer1.cpp)
+target_link_libraries(ProducerAndComsumer1 pthread)
+
+add_executable(ProducerAndComsumer2 ProducerAndComsumer2.cpp)
+target_link_libraries(ProducerAndComsumer2 pthread)
+
+add_executable(ProducerAndComsumer3 ProducerAndComsumer3.cpp)
+target_link_libraries(ProducerAndComsumer3 pthread)
+
+add_executable(ProducerAndComsumer4 ProducerAndComsumer4.cpp)
+target_link_libraries(ProducerAndComsumer4 pthread)
