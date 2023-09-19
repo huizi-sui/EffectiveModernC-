@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.0.0)
-add_subdirectory(concurrency)
 
+add_subdirectory(concurrency)
+add_subdirectory(effectiveCpp)
 # set(CMAKE_CXX_STANDARD 11)
 
 add_executable(item1 item1.cpp)
